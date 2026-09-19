@@ -78,5 +78,86 @@ modal.addEventListener('click', (e) => {
   if (e.target === modal) modal.classList.remove('active');
 });
 
+// Register Service Worker for PWA / Offline capabilities
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then((registration) => {
+        console.log('ServiceWorker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.error('ServiceWorker registration failed:', error);
+      });
+  });
+}
+
+// Register Service Worker & handle automatic update prompts
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').then((registration) => {
+      
+      // Check for updates periodically or on page load
+      registration.addEventListener('updatefound', () => {
+        const newWorker = registration.installing;
+        
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            // New content is available; show update notification to user
+            showUpdateToast();
+          }
+        });
+      });
+
+    }).catch((error) => console.error('SW registration failed:', error));
+
+    // Reload page once the new Service Worker takes over
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!refreshing) {
+        refreshing = true;
+        window.location.reload();
+      }
+    });
+  });
+}
+
+// Banner/Toast notifying user to reload for new recipes
+function showUpdateToast() {
+  const toast = document.createElement('div');
+  toast.id = 'update-toast';
+  toast.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e05638;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 1000;
+  `;
+  toast.innerHTML = `
+    <span>New recipes available!</span>
+    <button id="reloadBtn" style="background:white; color:#e05638; border:none; padding:6px 12px; border-radius:15px; font-weight:bold; cursor:pointer;">Update</button>
+  `;
+  
+  document.body.appendChild(toast);
+
+  document.getElementById('reloadBtn').addEventListener('click', () => {
+    // Tell the waiting Service Worker to activate immediately
+    navigator.serviceWorker.ready.then((registration) => {
+      if (registration.waiting) {
+        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+      } else {
+        window.location.reload();
+      }
+    });
+  });
+}
+
 // Run App
 initApp();
