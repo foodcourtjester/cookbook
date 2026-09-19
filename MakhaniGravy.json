@@ -1,0 +1,39 @@
+{
+  "id": "makhani-gravy",
+  "title": "Makhani Gravy",
+  "category": ["indian", "vegetarian"],
+  "img": "images/brownies.jpg",
+  "equipment": [
+    "Kitchen scale",
+    "Cup measures and spoons",
+    "Dutch oven or heavy bottomed pan with lid",
+    "Hand blender or food processor"
+  ],
+  "ingredients": [
+    "2 Tbsp neutral oil (vegetable or canola)",
+    "1 Lb tomatoes",
+    "4 oz. red onions, roughly chopped",
+    "2 oz. raw cashews",
+    "4 cloves garlic, whole",
+    "1 Tbsp kasuri methi",
+    "3 Tbsp salted butter",
+    "1/2 tsp garam masala",
+    "1 tsp red chili powder",
+    "2 tsp sugar",
+    "1 tsp salt",
+    "3 Tbsp heavy cream",
+    "2 Tbsp white vinegar",
+    " 3/4 cup water"
+  ],
+  "instructions": [
+    "Heat the oil in a Dutch oven or a large heavy bottomed pan.",
+    "Add the onions and garlic and stir until onions are translucent.",
+    "Add the tomatoes and cashews. Cover the pan and allow the mixture to cook for 10 minutes for the tomatoes to soften.",
+    "Mix in the salt, and add the heavy cream. Stir for about 1 minute.",
+    "Add the chili powder, garam masala, kasuri methi, and sugar and stir.",
+    "Allow the mixture to sit uncovered for 3-4 minutes before adding the butter.",
+    "Add the water and vinegar. Stir once and cover the pan, allow the gravy to cook for 15 minutes.",
+    "After the 15 minutes are up, turn off the stove and blend the mixture using a hand blender or food processor.",
+    "Add cubed paneer, vegetables or chicken and serve with roti or naan."
+  ]
+}
