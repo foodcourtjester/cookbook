@@ -17,12 +17,14 @@ async function initApp() {
 }
 
 // 2. Render Card Grid (Photo + Name)
+// Render Card Grid (Supports Multiple Categories)
 function renderGrid(category) {
   recipeGrid.innerHTML = '';
 
+  // Check if item's categories array includes the selected tag
   const filtered = category === 'all' 
     ? allCatalog 
-    : allCatalog.filter(item => item.category === category);
+    : allCatalog.filter(item => item.categories && item.categories.includes(category));
 
   filtered.forEach(item => {
     const card = document.createElement('article');
@@ -38,7 +40,6 @@ function renderGrid(category) {
     recipeGrid.appendChild(card);
   });
 }
-
 // 3. Fetch detailed JSON file when recipe card is clicked
 async function loadAndOpenRecipe(recipeId) {
   try {
