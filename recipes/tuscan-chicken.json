@@ -3,6 +3,14 @@
   "title": "Creamy Tuscan Chicken",
   "categories": ["italian", "chicken", "dinner"],
   "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
+  "equipment": [
+    "Large skillet",
+    "Chef's knife",
+    "Cutting board",
+    "Whisk",
+    "Measuring cups and spoons",
+    "Tongs"
+  ],
   "ingredients": [
     "2 large chicken breasts, sliced horizontally",
     "1 tbsp olive oil",
