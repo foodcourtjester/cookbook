@@ -6,6 +6,12 @@
     "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80"
   },
   {
+    "id": "makhani-gravy",
+    "title": "Makhani Gravy",
+    "categories": ["indian", "vegetarian"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/makhani-gravy.jpg"
+  },
+  {
     "id": "brownies",
     "title": "From Scratch Brownies",
     "categories": "desserts",
