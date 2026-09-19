@@ -1,22 +1,22 @@
 let allCatalog = [];
 
 const recipeGrid = document.getElementById('recipeGrid');
-const chipsContainer = document.getElementById('chipsContainer');
+const tagsContainer = document.getElementById('tagsContainer');
 const modal = document.getElementById('recipeModal');
 const closeModalBtn = document.getElementById('closeModal');
 
-// 1. Fetch initial index catalog to render cards
+// 1. Fetch initial catalog index
 async function initApp() {
   try {
     const response = await fetch('./recipes/index.json');
     allCatalog = await response.json();
     renderGrid('all');
   } catch (error) {
-    console.error('Error loading recipe catalog:', error);
+    console.error('Error loading recipe index:', error);
   }
 }
 
-// 2. Render Card Grid
+// 2. Render Card Grid (Photo + Name)
 function renderGrid(category) {
   recipeGrid.innerHTML = '';
 
@@ -34,13 +34,12 @@ function renderGrid(category) {
       </div>
     `;
 
-    // Fetch individual JSON file on tap
     card.addEventListener('click', () => loadAndOpenRecipe(item.id));
     recipeGrid.appendChild(card);
   });
 }
 
-// 3. Dynamic Fetch for specific JSON file
+// 3. Fetch detailed JSON file when recipe card is clicked
 async function loadAndOpenRecipe(recipeId) {
   try {
     const response = await fetch(`./recipes/${recipeId}.json`);
@@ -57,60 +56,44 @@ async function loadAndOpenRecipe(recipeId) {
 
     modal.classList.add('active');
   } catch (error) {
-    console.error(`Failed to load recipe: ${recipeId}`, error);
+    console.error(`Failed to load recipe detail: ${recipeId}`, error);
   }
 }
 
-// 4. Chip Event Listener
-chipsContainer.addEventListener('click', (e) => {
-  if (!e.target.classList.contains('chip')) return;
+// 4. Category Tag Filtering Listener
+tagsContainer.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('tag')) return;
 
-  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
   e.target.classList.add('active');
 
   const category = e.target.getAttribute('data-category');
   renderGrid(category);
 });
 
-// Modal Close Handlers
+// Modal Close Listeners
 closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
 modal.addEventListener('click', (e) => {
   if (e.target === modal) modal.classList.remove('active');
 });
 
-// Register Service Worker for PWA / Offline capabilities
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then((registration) => {
-        console.log('ServiceWorker registered with scope:', registration.scope);
-      })
-      .catch((error) => {
-        console.error('ServiceWorker registration failed:', error);
-      });
-  });
-}
+// Run App
+initApp();
 
-// Register Service Worker & handle automatic update prompts
+// 5. Register Service Worker & Handle Updates
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').then((registration) => {
-      
-      // Check for updates periodically or on page load
       registration.addEventListener('updatefound', () => {
         const newWorker = registration.installing;
-        
         newWorker.addEventListener('statechange', () => {
           if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-            // New content is available; show update notification to user
             showUpdateToast();
           }
         });
       });
+    }).catch(err => console.error('SW Registration Failed:', err));
 
-    }).catch((error) => console.error('SW registration failed:', error));
-
-    // Reload page once the new Service Worker takes over
     let refreshing = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       if (!refreshing) {
@@ -121,43 +104,24 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Banner/Toast notifying user to reload for new recipes
 function showUpdateToast() {
   const toast = document.createElement('div');
-  toast.id = 'update-toast';
   toast.style.cssText = `
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #e05638;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 1000;
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: #e05638; color: white; padding: 12px 20px; border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; align-items: center;
+    gap: 12px; z-index: 1000;
   `;
   toast.innerHTML = `
     <span>New recipes available!</span>
     <button id="reloadBtn" style="background:white; color:#e05638; border:none; padding:6px 12px; border-radius:15px; font-weight:bold; cursor:pointer;">Update</button>
   `;
-  
   document.body.appendChild(toast);
 
   document.getElementById('reloadBtn').addEventListener('click', () => {
-    // Tell the waiting Service Worker to activate immediately
-    navigator.serviceWorker.ready.then((registration) => {
-      if (registration.waiting) {
-        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-      } else {
-        window.location.reload();
-      }
+    navigator.serviceWorker.ready.then((reg) => {
+      if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+      else window.location.reload();
     });
   });
 }
-
-// Run App
-initApp();

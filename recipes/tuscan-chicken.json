@@ -1,10 +1,10 @@
 {
   "id": "tuscan-chicken",
-  "title": "Creamy Tuscan Garlic Chicken",
+  "title": "Creamy Tuscan Chicken",
   "category": "italian",
   "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
   "ingredients": [
-    "2 large chicken breasts, halved horizontally",
+    "2 large chicken breasts, sliced horizontally",
     "1 tbsp olive oil",
     "1 cup heavy cream",
     "1/2 cup chicken broth",
@@ -16,8 +16,8 @@
   "instructions": [
     "Season chicken breasts with salt, pepper, and garlic powder.",
     "Heat olive oil in a skillet over medium-high heat and sear chicken for 5 minutes per side until golden.",
-    "Remove chicken from the skillet and set aside on a plate.",
-    "Pour heavy cream and chicken broth into the skillet, then whisk in Parmesan cheese until smooth.",
+    "Remove chicken from the skillet and set aside.",
+    "Pour heavy cream and chicken broth into the skillet; whisk in Parmesan cheese until smooth.",
     "Stir in spinach and sun-dried tomatoes; simmer until spinach wilts.",
     "Return chicken to the pan and spoon sauce over top before serving."
   ]

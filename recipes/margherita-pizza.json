@@ -1,22 +1,21 @@
 {
   "id": "margherita-pizza",
-  "title": "Classic Margherita Pizza",
+  "title": "Margherita Pizza",
   "category": "italian",
   "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80",
   "ingredients": [
     "1 ball pizza dough",
-    "1/2 cup San Marzano tomato sauce",
+    "1/2 cup tomato sauce",
     "4 oz fresh mozzarella, sliced",
     "Fresh basil leaves",
-    "1 tbsp extra virgin olive oil",
-    "Pinch of sea salt"
+    "1 tbsp extra virgin olive oil"
   ],
   "instructions": [
-    "Preheat your oven (and pizza stone if available) to 500°F (260°C).",
-    "Stretch out the dough on a lightly floured surface into a 12-inch circle.",
-    "Spread tomato sauce evenly over the crust, leaving a small border.",
+    "Preheat oven to 500°F (260°C).",
+    "Stretch dough into a 12-inch circle on a baking sheet or pizza stone.",
+    "Spread tomato sauce evenly over the crust.",
     "Top with fresh mozzarella slices.",
     "Bake for 10-12 minutes until crust is golden and cheese is bubbly.",
-    "Garnish with fresh basil leaves, drizzle olive oil, and sprinkle sea salt before slicing."
+    "Garnish with fresh basil leaves and a drizzle of olive oil before slicing."
   ]
 }
