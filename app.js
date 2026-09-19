@@ -40,6 +40,7 @@ function renderGrid(category) {
     recipeGrid.appendChild(card);
   });
 }
+
 // 3. Fetch detailed JSON file when recipe card is clicked
 async function loadAndOpenRecipe(recipeId) {
   try {
@@ -49,9 +50,21 @@ async function loadAndOpenRecipe(recipeId) {
     document.getElementById('modalTitle').textContent = recipe.title;
     document.getElementById('modalImage').src = recipe.img;
     
+    // Render Equipment (if present in JSON)
+    const equipmentList = document.getElementById('modalEquipment');
+    if (recipe.equipment && recipe.equipment.length > 0) {
+      equipmentList.parentElement.querySelector('h3').style.display = 'block'; // Show section header
+      equipmentList.innerHTML = recipe.equipment.map(item => `<li>${item}</li>`).join('');
+    } else {
+      equipmentList.parentElement.querySelector('h3').style.display = 'none'; // Hide if omitted
+      equipmentList.innerHTML = '';
+    }
+
+    // Render Ingredients
     document.getElementById('modalIngredients').innerHTML = recipe.ingredients
       .map(ing => `<li>${ing}</li>`).join('');
       
+    // Render Instructions
     document.getElementById('modalInstructions').innerHTML = recipe.instructions
       .map(inst => `<li>${inst}</li>`).join('');
 
@@ -60,7 +73,6 @@ async function loadAndOpenRecipe(recipeId) {
     console.error(`Failed to load recipe detail: ${recipeId}`, error);
   }
 }
-
 // 4. Category Tag Filtering Listener
 tagsContainer.addEventListener('click', (e) => {
   if (!e.target.classList.contains('tag')) return;
