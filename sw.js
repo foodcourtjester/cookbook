@@ -11,6 +11,7 @@ const ASSETS_TO_CACHE = [
   './icons/favicon-32x32.png',
   './icons/icon-192x192.png',
   './icons/icon-512x512.png'
+  './images/brownies.jpg'
 ];
 
 self.addEventListener('install', (event) => {
