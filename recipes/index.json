@@ -2,19 +2,19 @@
   {
     "id": "tuscan-chicken",
     "title": "Creamy Tuscan Chicken",
-    "category": ["italian", "chicken", "dinner"],
+    "categories": ["italian", "chicken", "dinner"],
     "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "margherita-pizza",
     "title": "Margherita Pizza",
-    "category": ["italian", "dinner"],
+    "categories": ["italian", "dinner"],
     "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "brownies",
     "title": "From Scratch Brownies",
-    "category": "desserts",
+    "categories": "desserts",
     "img": "https://foodcourtjester.github.io/cookbook/images/brownies.jpg"
   }
 ]
