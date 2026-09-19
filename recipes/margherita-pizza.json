@@ -1,7 +1,7 @@
 {
   "id": "margherita-pizza",
   "title": "Margherita Pizza",
-  "categories": ["italian", "dinner"],,
+  "categories": ["italian", "dinner"],
   "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80",
   "ingredients": [
     "1 ball pizza dough",
