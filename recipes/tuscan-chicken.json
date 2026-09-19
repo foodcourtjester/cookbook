@@ -1,7 +1,7 @@
 {
   "id": "tuscan-chicken",
   "title": "Creamy Tuscan Chicken",
-  "category": "italian",
+  "category": ["italian", "chicken", "dinner"],
   "img": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
   "ingredients": [
     "2 large chicken breasts, sliced horizontally",
