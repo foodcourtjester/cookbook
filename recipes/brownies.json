@@ -3,6 +3,14 @@
   "title": "From Scratch Brownies",
   "category": "desserts",
   "img": "images/brownies.jpg",
+  "equipment": [
+    "9x9 inch baking pan",
+    "Cup measures",
+    "Mixing Bowl",
+    "Whisk",
+    "Wire rack",
+    "Dough scraper"
+  ],
   "ingredients": [
     "1/2 cup neutral oil (vegetable or canola)",
     "1 cup granulated white sugar",
