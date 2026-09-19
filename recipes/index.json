@@ -2,12 +2,14 @@
   {
     "id": "tuscan-chicken",
     "title": "Creamy Tuscan Chicken",
-    "category": "italian"
+    "category": "italian",
+    "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "margherita-pizza",
     "title": "Margherita Pizza",
-    "category": "italian"
+    "category": "italian",
+    "img": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": "brownies",
