@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe PWA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Find a Recipe</h1>
+    <div class="category-chips" id="chipsContainer">
+      <button class="chip active" data-category="all">All</button>
+      <button class="chip" data-category="italian">Italian</button>
+      <button class="chip" data-category="mexican">Mexican</button>
+      <button class="chip" data-category="asian">Asian</button>
+      <button class="chip" data-category="desserts">Desserts</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="recipe-grid" id="recipeGrid"></div>
+  </main>
+
+  <!-- Recipe Detail Modal -->
+  <div class="modal-overlay" id="recipeModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <h2 id="modalTitle">Loading...</h2>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      
+      <h3 class="section-header">Ingredients</h3>
+      <ul id="modalIngredients" class="ingredient-list"></ul>
+
+      <h3 class="section-header">Instructions</h3>
+      <ol id="modalInstructions" class="instruction-list"></ol>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
