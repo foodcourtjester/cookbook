@@ -13,6 +13,6 @@
     "id": "brownies",
     "title": "From Scratch Brownies",
     "category": "desserts",
-    "img": "images/brownies.jpg"
+    "img": "/images/brownies.jpg"
   }
 ]
