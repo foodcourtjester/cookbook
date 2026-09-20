@@ -1,7 +1,7 @@
 {
   "id": "naan",
   "title": "Naan",
-  "category": "bread",
+  "categories": "bread",
   "img": "images/naan.jpg",
   "equipment": [
     "Kitchen scale",
