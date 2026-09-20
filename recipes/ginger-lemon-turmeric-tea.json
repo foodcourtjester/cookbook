@@ -1,0 +1,28 @@
+{
+  "id": "naan",
+  "title": "Naan",
+  "category": "bread",
+  "img": "images/naan.jpg",
+  "equipment": [
+    "Kitchen scale",
+    "Cup measures and spoons",
+    "Box grater",
+    "Lemon juicer"
+  ],
+  "ingredients": [
+    "6 cups tap water",
+    "75 grams ginger, scrubbed and grated",
+    "1 large lemon",
+    "1 Tbsp ground turmeric"
+  ],
+  "instructions": [
+    "Add the water, grated ginger, and turmeric into a pasta pot.",
+    "Cut the lemon and use the juicer to squeeze all th juice out.",
+    "Add the spent lemon into the pot and bring to a boil.",
+    "Allow the mixture to boil for ~12 minutes.",
+    "Let the mixture cool before straining it into a 32 oz. mason jar. You might have some left over which can be stored in a smaller jar.",
+    "Refrigerate.",
+    "Add ~ 1/4 cup to 16-32 oz. of water.",
+    "This tea should last about 10-12 days in the fridge."
+  ]
+}
