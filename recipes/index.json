@@ -1,5 +1,10 @@
 [
-  
+  {
+    "id": "ginger-lemon-turmeric-tea",
+    "title": "Ginger Lemon Turmeric Tea",
+    "categories": "drinks",
+    "img": "https://foodcourtjester.github.io/cookbook/images/ginger-lemon-turmeric-tea.jpg"
+  },
   {
     "id": "naan",
     "title": "Naan",
