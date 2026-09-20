@@ -1,4 +1,11 @@
 [
+  
+  {
+    "id": "stecca-bread",
+    "title": "Stecca Bread",
+    "categories": "bread",
+    "img": "https://foodcourtjester.github.io/cookbook/images/stecca-bread.jpg"
+  },
   {
     "id": "tuscan-chicken",
     "title": "Creamy Tuscan Chicken",
