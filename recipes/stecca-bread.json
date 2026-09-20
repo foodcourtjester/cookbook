@@ -1,0 +1,37 @@
+{
+  "id": "stecca-bread",
+  "title": "Stecca bread",
+  "category": "bread",
+  "img": "images/stecca.jpg",
+  "equipment": [
+    "Kitchen scale",
+    "Cup measures and spoons",
+    "Sheet pan or 9x13 inch glass pan",
+    "Dough scraper"
+  ],
+  "ingredients": [
+    "3 cups (~400 grams) bread flour",
+    "1.5 cups (~350 grams) cool waater (55-60 F)",
+    "4 oz. red onions, roughly chopped",
+    "1/2 tsp salt",
+    "3/4 tsp sugar",
+    "1/4 tsp instant dry yeast",
+    "Additional flour for dusting",
+    "1/4 tsp finishing salt",
+    "oil for coating baking sheet"
+  ],
+  "instructions": [
+    "In a large mixing bowl, mix the flour and water. Allow it to sit for about 20 minutes.",
+    "Add the salt, sugar, and yeast. Combine into a wet, sticky dough.",
+    "Cover the bowl and let it sit at room temperature until the dough has more than doubled in size. About 10-18 hours depending on room temperature.",
+    "When this first rise is complete, dust a  work surface with flour. Use a dough scraper or rubber spatula to scrape the dough out of the bowl in one piece.",
+    "Fold the dough over itself 3 times and shape into a flattened ball.",
+    "Brush the surface with oil, sprinkle with finishing salt and place back into the mixing bowl for about 1-2 hours for the second rise.",
+    "30 minutes before the end of the second rise, preheat the oven to 500 F.",
+    "Oil a baking sheet if making baguettes, or a 9x13 glass pan if making focacacia.",
+    "If making baguettes, cut the dough into quarters and shape into baguettes about the length of the sheet pan.",
+    "If making foccacia, place the dough into the baking pan and stretch out to the edges.",
+    "Bake for about 15-25 minutes until the crust is golden-brown.",
+    "Allow the bread to cool completely on a wire rack before cutting and serving."
+  ]
+}
