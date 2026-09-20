@@ -1,7 +1,7 @@
 {
   "id": "stecca-bread",
   "title": "Stecca bread",
-  "category": "bread",
+  "categories": "bread",
   "img": "images/stecca-bread.jpg",
   "equipment": [
     "Kitchen scale",
