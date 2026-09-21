@@ -18,6 +18,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/stecca-bread.jpg"
   },
   {
+    "id": "sweet-potato-enchiladas",
+    "title": "Sweet Potato Enchiladas",
+    "categories": ["mexican", "vegetarian"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/sweet-potato-enchiladas.jpg"
+  },
+  {
     "id": "tuscan-chicken",
     "title": "Creamy Tuscan Chicken",
     "categories": ["italian", "chicken", "dinner"],
