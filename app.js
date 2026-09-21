@@ -1,30 +1,37 @@
 let allCatalog = [];
+// Store active categories in a Set
+let selectedCategories = new Set(['all']);
 
 const recipeGrid = document.getElementById('recipeGrid');
 const tagsContainer = document.getElementById('tagsContainer');
 const modal = document.getElementById('recipeModal');
 const closeModalBtn = document.getElementById('closeModal');
 
-// 1. Fetch initial catalog index
+// Fetch catalog
 async function initApp() {
   try {
     const response = await fetch('./recipes/index.json');
     allCatalog = await response.json();
-    renderGrid('all');
+    renderGrid();
   } catch (error) {
     console.error('Error loading recipe index:', error);
   }
 }
 
-// 2. Render Card Grid (Photo + Name)
-// Render Card Grid (Supports Multiple Categories)
-function renderGrid(category) {
+// Render Card Grid (Supports Multiple Active Tags)
+function renderGrid() {
   recipeGrid.innerHTML = '';
 
-  // Check if item's categories array includes the selected tag
-  const filtered = category === 'all' 
-    ? allCatalog 
-    : allCatalog.filter(item => item.categories && item.categories.includes(category));
+  const filtered = selectedCategories.has('all')
+    ? allCatalog
+    : allCatalog.filter(item => {
+        if (!item.categories) return false;
+        // MATCH ANY SELECTED TAG (OR logic):
+        return Array.from(selectedCategories).some(cat => item.categories.includes(cat));
+
+        // OPTIONAL - MATCH ALL SELECTED TAGS (AND logic):
+        // return Array.from(selectedCategories).every(cat => item.categories.includes(cat));
+      });
 
   filtered.forEach(item => {
     const card = document.createElement('article');
@@ -41,47 +48,42 @@ function renderGrid(category) {
   });
 }
 
-// 3. Fetch detailed JSON file when recipe card is clicked
-async function loadAndOpenRecipe(recipeId) {
-  try {
-    const response = await fetch(`./recipes/${recipeId}.json`);
-    const recipe = await response.json();
-    
-    document.getElementById('modalTitle').textContent = recipe.title;
-    document.getElementById('modalImage').src = recipe.img;
-    
-    // Render Equipment (if present in JSON)
-    const equipmentList = document.getElementById('modalEquipment');
-    if (recipe.equipment && recipe.equipment.length > 0) {
-      equipmentList.parentElement.querySelector('h3').style.display = 'block'; // Show section header
-      equipmentList.innerHTML = recipe.equipment.map(item => `<li>${item}</li>`).join('');
-    } else {
-      equipmentList.parentElement.querySelector('h3').style.display = 'none'; // Hide if omitted
-      equipmentList.innerHTML = '';
-    }
-
-    // Render Ingredients
-    document.getElementById('modalIngredients').innerHTML = recipe.ingredients
-      .map(ing => `<li>${ing}</li>`).join('');
-      
-    // Render Instructions
-    document.getElementById('modalInstructions').innerHTML = recipe.instructions
-      .map(inst => `<li>${inst}</li>`).join('');
-
-    modal.classList.add('active');
-  } catch (error) {
-    console.error(`Failed to load recipe detail: ${recipeId}`, error);
-  }
-}
-// 4. Category Tag Filtering Listener
+// Multi-Select Category Tag Listener
 tagsContainer.addEventListener('click', (e) => {
   if (!e.target.classList.contains('tag')) return;
 
-  document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
-  e.target.classList.add('active');
-
   const category = e.target.getAttribute('data-category');
-  renderGrid(category);
+
+  if (category === 'all') {
+    // If 'All' is clicked, clear all specific filters
+    selectedCategories.clear();
+    selectedCategories.add('all');
+    document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+  } else {
+    // Remove 'All' when selecting specific tags
+    if (selectedCategories.has('all')) {
+      selectedCategories.delete('all');
+      document.querySelector('.tag[data-category="all"]').classList.remove('active');
+    }
+
+    // Toggle the clicked tag
+    if (selectedCategories.has(category)) {
+      selectedCategories.delete(category);
+      e.target.classList.remove('active');
+    } else {
+      selectedCategories.add(category);
+      e.target.classList.add('active');
+    }
+
+    // If all specific tags are deselected, fall back to 'All'
+    if (selectedCategories.size === 0) {
+      selectedCategories.add('all');
+      document.querySelector('.tag[data-category="all"]').classList.add('active');
+    }
+  }
+
+  renderGrid();
 });
 
 // Modal Close Listeners
