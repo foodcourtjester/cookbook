@@ -27,10 +27,10 @@ function renderGrid() {
     : allCatalog.filter(item => {
         if (!item.categories) return false;
         // MATCH ANY SELECTED TAG (OR logic):
-        return Array.from(selectedCategories).some(cat => item.categories.includes(cat));
+        // return Array.from(selectedCategories).some(cat => item.categories.includes(cat));
 
-        // OPTIONAL - MATCH ALL SELECTED TAGS (AND logic):
-        // return Array.from(selectedCategories).every(cat => item.categories.includes(cat));
+        // MATCH ALL SELECTED TAGS (AND logic):
+        return Array.from(selectedCategories).every(cat => item.categories.includes(cat));
       });
 
   filtered.forEach(item => {
