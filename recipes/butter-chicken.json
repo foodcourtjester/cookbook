@@ -1,0 +1,47 @@
+{
+  "id": "butter-chicken",
+  "title": "Butter Chicken",
+  "categories": ["indian", "chicken"],
+  "img": "images/butter-chicken.jpg",
+  "equipment": [
+    "Kitchen scale",
+    "Cup measures and spoons",
+    "Dutch oven or heavy bottomed pan with lid",
+    "Hand blender or food processor",
+    "Cutting board"
+  ],
+  "ingredients": [
+    "Chicken",
+    "2 Tbsp malt vinegar",
+    "1 Lb chicken breast cut into cubes",
+    "1 Tbsp ginger-garlic paste",
+    "1 Tbsp red chili powder",
+    "1/2 tsp salt",
+    "2 Tbsp neutral oil",
+    "Gravy",
+    "500 grams tomatoes (usually on the vine)",
+    "100 grams onions, cut large",
+    "1 Tbsp garlic paste, or 4-5 garlic cloves",
+    "50 grams raw cashews",
+    "1 Tbsp kasuri methi",
+    "1/2 tsp garam masala",
+    "1 Tbsp Kashmiri red chili powder",
+    "3 Tbsp sugar",
+    "1 tsp salt",
+    "5 Tbsp salted butter, divided",
+    "3 Tbsp heavy cream",
+    "2 Tbsp malted vinegar",
+    "1 cup water"
+  ],
+  "instructions": [
+    "Marinate the chicken with the ginger-garlic paste, red chili powder, and salt. Let it sit for 20-30 minutes.",
+    "Heat the oil in a heavy bottomed pan or Dutch oven over medium heat, and saute the marinated chicken. Once cooked, place aside in a bowl.",
+    "In the same pan, add a little more oil, and att 2 Tbsp of salted butter and the onions.",
+    "Once the onions are cooked, about 3-4 minutes, add the tomatoes and cashews and saute stir until coated in oil.",
+    "Add the chili powder, garam masala, sugar, garlic, and 1 cup of water. Stir.",
+    "Mix everything and let it simmer uncovered for 15 minutes.",
+    "After the 15 minutes are up, turn off the stove and use a hand blender or food processor, blend into a fine puree.",
+    "Turn the stove on again, and add the remaining butter, cream, cooked chicken, and kasuri methi.",
+    "Garnish (optional) with some more cream and kasuri methi and serve with roti or naan."
+  ]
+}
