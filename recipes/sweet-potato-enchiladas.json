@@ -1,0 +1,44 @@
+{
+  "id": "sweet-potato-enchiladas",
+  "title": "Sweet Potato Enchiladas",
+  "category": ["mexican", "vegetarian"],
+  "img": "images/sweet-potato-enchiladas.jpg",
+  "equipment": [
+    "Baking sheet",
+    "Lasagna pan",
+    "Kitchen scale",
+    "Large mixing bowl",
+    "Measuring cups and spoons"
+  ],
+  "ingredients": [
+    "1.25 Lbs sweet potatoes",
+    "1 15 oz. canned black beans, drained and rinsed, or 1.5 cups cooked black beans",
+    "8 oz. Monterrey Jack or Mexican cheese, divided",
+    "2 oz. crumbled feta or Cotija cheese",
+    "2 small cans diced green chiles",
+    "2 cloves garlic, pressed or minced",
+    "2 Tbsp lime juice",
+    "1/2 tsp ground cumin",
+    "1/2 tsp red chili powder",
+    "2 cups salsa verde or enchilada sauce",
+    "10 tortillas",
+    "2 Tbsp sour cream or Greek yogurt",
+    "1 Tbsp water",
+    "4 oz. chopped onion for garnish",
+    "Salt and pepper to taste",
+    "Chopped cilantro for garnish"
+  ],
+  "instructions": [
+    "Preheat oven to 400 F and line a baking sheet with parchment paper.",
+    "Slice the sweet potatoes lengthwise and coat with olive oil. Place them flat side down on the baking sheet. Bake about 20-25 minutes until tender and cooked through.",
+    "Pour enough salsa verde or enchilada sauce into a lasagna pan to lightly cover the bottom.",
+    "In a mixing bowl, add the cooked (and skinned) sweet potatoes, black beans, chiles, 4 oz. of cheese, feta/Cotija, garlic, cumin, lime juice, salt, and pepper and combine. This is the filling",
+    "Add about 1/2 cup of the filling into the center of one tortilla, fold over, and place folded side down into the lasagna pan.",
+    "Repeat for all the tortillas until the lasagna pan is full - about 8-10 tortillas.",
+    "Top with remaining salsa verde/enchilada sauce and 4 oz. cheese.",
+    "Bake for 25 minutes until the sauce is bubbling and cheese is lightly golden.",
+    "Remove from the oven and let the enchiladas cool for about 10 minutes.",
+    "Whisk sour cream/yogurt with water and drizzle over the enchiladas.",
+    "Garnish with cilantro and onions. The enchiladas are ready to serve"
+  ]
+}
