@@ -36,6 +36,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/makhani-gravy.jpg"
   },
   {
+    "id": "butter-chicken",
+    "title": "Butter Chicken",
+    "categories": ["indian", "chicken"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/butter-chicken.jpg"
+  },
+  {
     "id": "brownies",
     "title": "From Scratch Brownies",
     "categories": ["desserts"],
