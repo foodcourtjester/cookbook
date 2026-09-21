@@ -2,19 +2,19 @@
   {
     "id": "ginger-lemon-turmeric-tea",
     "title": "Ginger Lemon Turmeric Tea",
-    "categories": "drinks",
+    "categories": ["drinks"],
     "img": "https://foodcourtjester.github.io/cookbook/images/ginger-lemon-turmeric-tea.jpg"
   },
   {
     "id": "naan",
     "title": "Naan",
-    "categories": "bread",
+    "categories": ["bread"],
     "img": "https://foodcourtjester.github.io/cookbook/images/naan.jpg"
   },
   {
     "id": "stecca-bread",
     "title": "Stecca Bread",
-    "categories": "bread",
+    "categories": ["bread"],
     "img": "https://foodcourtjester.github.io/cookbook/images/stecca-bread.jpg"
   },
   {
@@ -38,7 +38,7 @@
   {
     "id": "brownies",
     "title": "From Scratch Brownies",
-    "categories": "desserts",
+    "categories": ["desserts"],
     "img": "https://foodcourtjester.github.io/cookbook/images/brownies.jpg"
   }
 ]
