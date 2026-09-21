@@ -1,7 +1,7 @@
 {
   "id": "sweet-potato-enchiladas",
   "title": "Sweet Potato Enchiladas",
-  "category": ["mexican", "vegetarian"],
+  "categories": ["mexican", "vegetarian"],
   "img": "images/sweet-potato-enchiladas.jpg",
   "equipment": [
     "Baking sheet",
