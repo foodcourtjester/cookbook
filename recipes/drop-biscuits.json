@@ -1,7 +1,7 @@
 {
   "id": "drop-biscuits",
   "title": "Drop Biscuits",
-  "category": "breakfast",
+  "categories": ["breakfast"],
   "img": "images/drop-biscuits.jpg",
   "equipment": [
     "Sheet pan",
