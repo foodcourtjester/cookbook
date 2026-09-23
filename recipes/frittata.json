@@ -1,0 +1,40 @@
+{
+  "id": "frittata",
+  "title": "Cast Iron Skillet Frittata",
+  "categories": ["breakfast"],
+  "img": "images/frittata.jpg",
+  "equipment": [
+    "Cast iron skillet",
+    "Mixing Bowl",
+    "Whisk"
+  ],
+  "ingredients": [
+    "Use 3-4 of the following:",
+    "1 small onion, diced",
+    "1 small potato, diced",
+    "1 roasted red pepper, diced",
+    "1-2 cups broccoli, chopped",
+    "1-2 cups cauliflower",
+    "1-2 leeks, diced",
+    "8 oz. mushrooms, diced or finely chopped",
+    "2-3 breakfast sausages",
+    "<b>Remaining Ingredients</b>",
+    "6-8 large eggs",
+    "1/2 - 1 cup shredded cheese (optional)",
+    "1/2 tsp salt",
+    "1-2 cloves garlic, minced",
+    "1 tsp each of any of the following spices - oregano, basil, thyme, smoked paprika, cumin etc."
+  ],
+  "instructions": [
+    "Preheat oven to 400 degrees F.",
+    "In a mixing bowl, whisk the eggs together and keep aside.",
+    "Heat a cast iron skillet on medium heat, and saute, the frittata ingredients. If the meat is raw, cook that first and then add the vegetables.",
+    "Add the desired seasonings and mix well.",
+    "Spread the sauteed mixture evenly in the skillet and add the cheese.",
+    "Pour the whisked eggs over the mixture and tilt the skillet around to ensure even settling.",
+    "Cook the frittata on the stove for 1-2 minutes and then put it in the oven for 8-10 minutes until the eggs are set.",
+    "Cut a slit in the frittata - if the egg mixture runs, bake for another couple of minutes.",
+    "Otherwise, pull the skillet out of the oven and allow to cool for a few minutes.",
+    "Slice a wedge and serve."
+  ]
+}
