@@ -1,0 +1,32 @@
+{
+  "id": "drop-biscuits",
+  "title": "Drop Biscuits",
+  "categories": ["breakfast"],
+  "img": "images/drop-biscuits.jpg",
+  "equipment": [
+    "Sheet pan",
+    "Cup measures and spoons",
+    "Mixing Bowl",
+    "Whisk",
+    "Wire rack",
+    "Ice cream scoop"
+  ],
+  "ingredients": [
+    "1 stick unsalted butter, cut into 1/4 inch cubes",
+    "1.5 cups all-purpose flour",
+    "2 tsp baking powder",
+    "2 eggs, room temperature",
+    "1 tsp kosher salt",
+    "3/4 cup whole milk"
+  ],
+  "instructions": [
+    "Preheat oven to 400 degrees F and cover a sheet pan with parchment paper.",
+    "In a mixing bowl, whisk together the flour, baking powder, and salt.",
+    "Toss butter into he mix until it is coated with flour.",
+    "Working quickly amd using one's fingers, rub or cut the butter into the flour until it resembles a coarse meal.",
+    "Add milk and stir with a fork until it just comes together into a sticky, shaggy dough.",
+    "Use an ice cream scoop to drop dough onto the baking sheet.",
+    "Bake for 20-22 minutes. If the tops do not seem done, broil on high for 1 minute.",
+    "Remove from the oven when golden-brown and allow to cool slightly on a wire rack before serving."
+  ]
+}
