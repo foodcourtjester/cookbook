@@ -70,5 +70,11 @@
     "title": "Sweet Potato Cake",
     "categories": ["desserts"],
     "img": "https://foodcourtjester.github.io/cookbook/images/sweet-potato-cake.jpg"
+  },
+  {
+    "id": "cream-cheese-frosting",
+    "title": "Cream Cheese Frosting",
+    "categories": ["tips"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/cream-cheese-frosting.jpg"
   }
 ]
