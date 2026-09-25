@@ -1,0 +1,42 @@
+{
+  "id": "turkey-kheema",
+  "title": "Turkey Kheema",
+  "category": ["indian", "turkey"],
+  "img": "images/turkey-kheema.jpg",
+  "equipment": [
+    "Silicon spatula",
+    "Slotted spoon",
+    "Dutch oven or heavy bottomed pan with lid"
+  ],
+  "ingredients": [
+    "2 Tbsp neutral oil (vegetable or canola), divided",
+    "1 Lb ground turkey",
+    "1 medium/large onion, diced",
+    "1-2 bay leaves",
+    "1 clove garlic, finely diced",
+    "1 stick of cinnamon",
+    "1 tsp mustard seeds",
+    "1 green chili, finely diced",
+    "1 28 oz. can tomato puree",
+    "1 cup green peas, thawed if frozen",
+    "4 oz. mushrooms (optional)",
+    "1/2 tsp ground cumin",
+    "1 tsp ground coriander",
+    "1/2 tsp garam masala",
+    "1/2 tsp salt, more to taste",
+    "1 Tbsp lemon juice"
+  ],
+  "instructions": [
+    "Heat 1 Tbsp of oil in a Dutch oven or a large heavy bottomed pan.",
+    "Add the turkey and brown until cooked through.",
+    "Remove the turkey with the slotted spoon and set aside.",
+    "Add the remainin oil and when it shimmers, add the bay leaves, mustard seeds and cinnamon stick.",
+    "When the mustard seeds begin to crackle, add the onion. Cook until the onions are translucent",
+    "Add the green chili, garlic, and salt and mix until well incorporated.",
+    "Add the tomato puree and cook while stirring frequently until the aroma of the tomatoes is all but gone.",
+    "Add the remaining spices and still well.",
+    "Add the peas and mushrooms, allowing them to cook until they are soft.",
+    "Add the browned turkey amd let the mixture simmer for about 5 minutes to allow the meat to absorb the flavors.",
+    "Turn off the heat, add the lemon juice, mix well, and serve with bread or rice."
+  ]
+}
