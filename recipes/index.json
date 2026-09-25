@@ -64,5 +64,11 @@
     "title": "From Scratch Brownies",
     "categories": ["desserts"],
     "img": "https://foodcourtjester.github.io/cookbook/images/brownies.jpg"
+  },
+  {
+    "id": "sweet-potato-cake",
+    "title": "Sweet Potato Cake",
+    "categories": ["desserts"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/sweet-potato-cake.jpg"
   }
 ]
