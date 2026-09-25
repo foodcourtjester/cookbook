@@ -1,0 +1,43 @@
+{
+  "id": "sweet-potato-cake",
+  "title": "Sweet Potato Cake",
+  "category": "desserts",
+  "img": "images/sweet-potato-cake.jpg",
+  "equipment": [
+    "9 inch springform pan",
+    "Cup measures",
+    "Mixing Bowl",
+    "Whisk",
+    "Wire rack",
+    "Dough scraper",
+    "Stand Mixer",
+    "Instant Pot or pasta pot",
+  ],
+  "ingredients": [
+    "1.25 cups all-purpose flour",
+    "1 tsp baking soda",
+    "1 tsp baking powder",
+    "1/4 tsp salt",
+    "1/2 Tbsp ground cinnamon",
+    "1/2 Tbsp ground ginger",
+    "8 Tbsp (1 stick) unsalted butter, room temperature",
+    "1 cup granulated sugar",
+    "1.5 large eggs, lightly beaten (beat each egg individually, and take 2 tsp of the second egg to add to the first)",
+    "1/2 Tbsp vanilla",
+    "1.25 cups mashed sweet potatoes, cooled",
+    "1/2 cup buttermilk",
+  ],
+  "instructions": [
+    "Preheat oven to 350 degrees F and grease a 9 inch springform baking pan.",
+    "Line cake pan with parchment paper and grease the paper as well.",
+    "In a mixing bowl, whisk the flour, baking soda, baking powder, salt, cinnamon, and ginger.",
+    "In the bowl of the stand mixer set up with the beater paddle, beat the butter and sugar on medium-high for 4-5 minutes, until fluffy, stopping and scraping the sides down the bowl as needed.",
+    "Add the eggs to the stand mixer bowl. Beat again on medium-high for 1-2 minutes until smooth.",
+    "Add the vanilla and sweet potatoes to the stand mixer. Beat once more on medium for 1-2 minutes until smooth",
+    "Add the remaining dry ingredients to the stand mixer. Beat on low for 1-2 minutes until incorporated.",
+    "Pour the batter into the cake pan and tap to even it out.",
+    "Bake for 35-40 minutes, or until an inserted toothpick in the center comes out clean.",
+    "Remove from the oven, and allow to cool in the pan for 10 minutes. Then invert onto a wire rack and allow to cool completely.",
+    "Later with cream cheese frosting and serve. Refrigerate if there are leftovers."
+  ]
+}
