@@ -54,6 +54,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/butter-chicken.jpg"
   },
   {
+    "id": "turkey-kheema",
+    "title": "Turkey Kheema",
+    "categories": ["indian", "turkey"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/turkey-kheema.jpg"
+  },
+  {
     "id": "brownies",
     "title": "From Scratch Brownies",
     "categories": ["desserts"],
