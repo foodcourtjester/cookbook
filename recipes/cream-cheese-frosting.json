@@ -1,0 +1,25 @@
+{
+  "id": "cream-cheese-frosting",
+  "title": "Cream Cheese Frosting",
+  "categories": ["tips"],
+  "img": "images/cream-cheese-frosting.jpg",
+  "equipment": [
+    "Stand mixer with paddle beater attachment",
+    "Cup measures and spoons",
+    "Scraper for mixer bowl"
+  ],
+  "ingredients": [
+    "1 stick unsalted butter, room temperature",
+    "1 8 oz. block of cream cheese, softeed",
+    "1 tsp vanilla extract",
+    "1/4 tsp salt",
+    "4 cups powdered sugar"
+  ],
+  "instructions": [
+    "In the bowl of a stand mixer, add butter and cream cheese and beat until creamy, well-combined, and lump-free.",
+    "Add vanilla extract and salt and beat on low to combine.",
+    "With the mixer running on low, gradually add the powdered sugar until completely combined.",
+    "Do not hesitate to stop and scrape down the sides to ensure even mixing.",
+    "Use to frost completely cooled cakes and cupcakes."
+  ]
+}
