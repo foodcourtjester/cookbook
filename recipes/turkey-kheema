@@ -1,7 +1,7 @@
 {
   "id": "turkey-kheema",
   "title": "Turkey Kheema",
-  "category": ["indian", "turkey"],
+  "categories": ["indian", "turkey"],
   "img": "images/turkey-kheema.jpg",
   "equipment": [
     "Silicon spatula",
