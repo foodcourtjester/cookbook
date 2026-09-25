@@ -1,7 +1,7 @@
 {
   "id": "makhani-gravy",
   "title": "Makhani Gravy",
-  "category": ["indian", "vegetarian"],
+  "categories": ["indian", "vegetarian"],
   "img": "images/makhani-gravy.jpg",
   "equipment": [
     "Kitchen scale",
