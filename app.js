@@ -189,3 +189,59 @@ function showUpdateToast() {
     });
   });
 }
+
+// Global variable for Wake Lock Sentinel
+let wakeLock = null;
+
+// Initialize Wake Lock Event Listener in setupEventListeners() or main script body
+const wakeLockBtn = document.getElementById('wakeLockBtn');
+
+if (wakeLockBtn) {
+  wakeLockBtn.addEventListener('click', toggleWakeLock);
+}
+
+// Toggle Screen Wake Lock
+async function toggleWakeLock() {
+  if (!('wakeLock' in navigator)) {
+    alert('Screen Wake Lock is not supported on this browser.');
+    return;
+  }
+
+  try {
+    if (!wakeLock) {
+      // Request Screen Wake Lock
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLockBtn.classList.add('active');
+      wakeLockBtn.innerHTML = '🔓 Screen Stay-On Active';
+
+      // Listen for system auto-release (e.g., user switched tabs)
+      wakeLock.addEventListener('release', () => {
+        wakeLock = null;
+        wakeLockBtn.classList.remove('active');
+        wakeLockBtn.innerHTML = '🔒 Keep Screen On';
+      });
+    } else {
+      // Release Screen Wake Lock
+      await wakeLock.release();
+      wakeLock = null;
+      wakeLockBtn.classList.remove('active');
+      wakeLockBtn.innerHTML = '🔒 Keep Screen On';
+    }
+  } catch (err) {
+    console.error(`Wake Lock error: ${err.name}, ${err.message}`);
+  }
+}
+
+// Release Wake Lock automatically when recipe modal is closed
+function closeModal() {
+  modal.classList.remove('active');
+  if (wakeLock) {
+    wakeLock.release().then(() => {
+      wakeLock = null;
+      if (wakeLockBtn) {
+        wakeLockBtn.classList.remove('active');
+        wakeLockBtn.innerHTML = '🔒 Keep Screen On';
+      }
+    });
+  }
+}
