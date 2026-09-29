@@ -54,6 +54,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/butter-chicken.jpg"
   },
   {
+    "id": "turkey-spinach-burger",
+    "title": "Turkey Spinach Burger",
+    "categories": ["burgers", "turkey"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/turkey-spinach-burger.jpg"
+  },
+  {
     "id": "turkey-kheema",
     "title": "Turkey Kheema",
     "categories": ["indian", "turkey"],
