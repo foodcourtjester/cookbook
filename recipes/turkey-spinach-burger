@@ -1,0 +1,27 @@
+{
+  "id": "turkey-spinach-burger",
+  "title": "Turkey Spinach Burger",
+  "categories": ["burgers", "turkey"],
+  "img": "images/turkey-spinach-burger.jpg",
+  "equipment": [
+    "Sheet pan",
+    "Cup measures and spoons",
+    "Mixing Bowl",
+    "Kitchen scale"
+  ],
+  "ingredients": [
+    "1 Lb. ground turkey",
+    "4 cups loose spinach, roughly chopped",
+    "2-3 stalks green onion, thinly sliced",
+    "1 clove garlic, minced",
+    "1 tsp kosher salt",
+    "1 tsp cumin",
+    "Pepper to taste"
+  ],
+  "instructions": [
+    "Combine all the ingredients in a medium mixing bowl.",
+    "Weigh and form 4 equal patties.",
+    "Place on sheet pan and cool in refrigerator for 30-40 minutes.",
+    "Grill and serve with the regular fixings."
+  ]
+}
