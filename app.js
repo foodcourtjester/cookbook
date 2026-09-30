@@ -8,6 +8,11 @@ const modal = document.getElementById('recipeModal');
 const closeModalBtn = document.getElementById('closeModal');
 const wakeLockBtn = document.getElementById('wakeLockBtn');
 
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const sideDrawer = document.getElementById('sideDrawer');
+const navOverlay = document.getElementById('navOverlay');
+const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
@@ -27,6 +32,45 @@ async function initApp() {
 
 // Event Listeners Setup
 function setupEventListeners() {
+
+  // Open / Close Side Drawer
+hamburgerBtn.addEventListener('click', openDrawer);
+closeDrawerBtn.addEventListener('click', closeDrawer);
+navOverlay.addEventListener('click', closeDrawer);
+
+function openDrawer() {
+  sideDrawer.classList.add('active');
+  navOverlay.classList.add('active');
+}
+
+function closeDrawer() {
+  sideDrawer.classList.remove('active');
+  navOverlay.classList.remove('active');
+}
+
+// Page View Navigation
+document.querySelectorAll('.nav-links .nav-item').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetPage = link.getAttribute('data-page');
+
+    // Update active state on nav links
+    document.querySelectorAll('.nav-links .nav-item').forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+
+    // Toggle active section
+    document.querySelectorAll('.page-view').forEach(page => page.classList.remove('active-page'));
+    
+    if (targetPage === 'home') {
+      document.getElementById('homePage').classList.add('active-page');
+    } else if (targetPage === 'about') {
+      document.getElementById('aboutPage').classList.add('active-page');
+    }
+
+    closeDrawer();
+  });
+});
+  
   // Category Tag Multi-Select
   if (tagsContainer) {
     tagsContainer.addEventListener('click', (e) => {
