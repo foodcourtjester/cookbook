@@ -14,9 +14,17 @@
 </head>
 <body>
 
-<h1>Successful Experiments with Food</h1>
-  
   <header>
+  <!-- Hamburger Menu Button (3 Lines) -->
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+    
+  <h1>Successful Experiments with Food</h1>
+  
+
     <!-- Category Tags Container -->
     <div class="category-tags" id="tagsContainer">
       <button class="tag active" data-category="all">All</button>
@@ -36,9 +44,29 @@
     </div>
   </header>
 
+  <!-- Slide-Out Navigation Drawer -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="side-drawer" id="sideDrawer">
+  <button class="drawer-close" id="closeDrawerBtn">&times;</button>
+  <ul class="nav-links">
+    <li><a href="#" class="nav-item active" data-page="home">📖 All Recipes</a></li>
+    <li><a href="#" class="nav-item" data-page="about">ℹ️ About</a></li>
+  </ul>
+</nav>
+  
   <main>
-    <!-- Card Grid Container -->
+    <!-- Home Page / Recipe Grid -->
+    <section id="homePage" class="page-view active-page">
     <div class="recipe-grid" id="recipeGrid"></div>
+    </section>
+
+    <!-- New About Page -->
+  <section id="aboutPage" class="page-view">
+    <div class="page-content">
+      <h2>About Successful Experiments with Food</h2>
+      <p>Welcome to my offline-capable recipe book! This PWA is built to store and search recipes quickly without needing an active internet connection.</p>
+    </div>
+  </section>
   </main>
 
   <!-- Recipe Detail Modal -->
