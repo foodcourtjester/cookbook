@@ -97,7 +97,7 @@ function renderGrid() {
     ? allCatalog
     : allCatalog.filter(item => {
         if (!item.categories) return false;
-        return Array.from(selectedCategories).every(cat => item.categories.includes(cat));
+        return Array.from(selectedCategories).some(cat => item.categories.includes(cat));
       });
 
   filtered.forEach(item => {
