@@ -228,7 +228,7 @@ h1 {
 .hamburger-btn .bar {
   width: 24px;
   height: 3px;
-  background-color: #ffffff; /* Adjust to match your header text color */
+  background-color: #000000; /* Adjust to match your header text color */
   border-radius: 2px;
   transition: all 0.3s ease;
 }
