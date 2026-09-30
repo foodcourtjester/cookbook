@@ -1,5 +1,5 @@
 // Increment this version string (e.g. v1 -> v2) whenever you add new recipes
-const CACHE_NAME = 'recipe-pwa-v1.72';
+const CACHE_NAME = 'recipe-pwa-v1.73';
 
 const ASSETS_TO_CACHE = [
   './',
