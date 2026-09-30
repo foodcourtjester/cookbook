@@ -33,15 +33,33 @@ h1 {
 /* Category Tags Bar */
 .category-tags {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   overflow-x: auto;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px;*/
+  padding: 10px 0;
+
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
 }
 
 .category-tags::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  height: 6px /* Thin, clean horizontal line */
+}
+
+.category-tags::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.category-tags::-webkit-scrollbar-thumb {
+  background: #e05638;      /* Matches your theme color */
+  border-radius: 10px;
+}
+
+.category-tags::-webkit-scrollbar-thumb:hover {
+  background: #c04025;
 }
 
 .tag {
