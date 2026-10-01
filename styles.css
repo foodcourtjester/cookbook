@@ -10,12 +10,12 @@
 
 [data-theme="dark"] {
   --bg-color: #121212;
-  --card-bg: #1e1e1e;
-  --text-color: #e0e0e0;
-  --header-bg: #1f1f1f;
-  --header-text: #e05638;
+  --card-bg: #000000;
+  --text-color: #ffffff;
+  --header-bg: #ffffff;
+  --header-text: #ffffff;
   --border-color: #333333;
-  --drawer-bg: #1e1e1e;
+  --drawer-bg: #000000;
 }
 
 * {
@@ -233,7 +233,11 @@ h1 {
 }
 
 .hamburger-btn .bar {
-  background-color: var(--header-text);
+  width: 24px;
+  height: 3px;
+  background-color: #000000; /* Set lines to black */
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* --- Slide-Out Side Drawer --- */
