@@ -34,6 +34,18 @@ body {
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
+  width: 80%;
+  max-width: 1200px; /* Optional cap so it doesn't get too wide on massive monitors */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 h1 {
