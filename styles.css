@@ -1,9 +1,21 @@
 :root {
-  --primary: #e05638;
   --bg-color: #f8f9fa;
   --card-bg: #ffffff;
-  --text-main: #2b2b2b;
-  --border-radius: 12px;
+  --text-color: #333333;
+  --header-bg: #e05638;
+  --header-text: #ffffff;
+  --border-color: #e0e0e0;
+  --drawer-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
+  --header-bg: #1f1f1f;
+  --header-text: #e05638;
+  --border-color: #333333;
+  --drawer-bg: #1e1e1e;
 }
 
 * {
@@ -15,14 +27,13 @@
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-main);
-  padding: 20px 16px;
-  max-width: 1200px;
-  margin: 0 auto;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-  margin-bottom: 24px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
 }
 
 h1 {
@@ -87,13 +98,9 @@ h1 {
   gap: 20px;
 }
 
-.recipe-card {
-  background: var(--card-bg);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
+.recipe-card, .modal-content, .side-drawer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
 }
 
 .recipe-card:hover {
@@ -226,11 +233,7 @@ h1 {
 }
 
 .hamburger-btn .bar {
-  width: 24px;
-  height: 3px;
-  background-color: #000000; /* Adjust to match your header text color */
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  background-color: var(--header-text);
 }
 
 /* --- Slide-Out Side Drawer --- */
@@ -315,4 +318,20 @@ h1 {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* --- Theme Toggle Switch Styling --- */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
 }
