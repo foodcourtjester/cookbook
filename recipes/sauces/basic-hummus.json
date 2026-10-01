@@ -1,0 +1,45 @@
+{
+  "id": "basic-hummus",
+  "title": "Basic Hummus",
+  "categories": ["sauces"],
+  "img": "images/hummus.jpg",
+  "equipment": [
+    "Kitchen scale",
+    "Cup measures and spoons",
+    "Food processor",
+    "Dough scraper"
+  ],
+  "ingredients": [
+    "1 50 oz. can of chickpeas or ~90 grams dried and soaked chickpeas",
+    "1 Tbsp baking soda",
+    "1/4 cup fresh lemon juice (from ~1 large lemon or from concentrate)",
+    "1/4 cup tahini",
+    "1 clove garlic, minced",
+    "2 Tbsp extra virgin olive oil, more to improve consistency",
+    "1 tsp salt",
+    "1/2 tsp cumin powder",
+    "2-3 Tbsp water (if hummus is too thick)",
+    "Dash of paprika",
+    "1 Tbsp roasted pine nuts, for garnish"
+  ],
+  "instructions": [
+    "<b>For either canned or soaked chickpeas</b>",
+    "Drain and rinse the chickpeas in a mixing bowl and coat with the baking soda.",
+    "Toss the chickpeas by hand to ensure the baking soda is as evenly coated as possible",
+    "<b>For the canned chickpeas</b>",
+    "Heat on high in the microwave oven or on medium on a skillet until chickpeas are too hot to touch.",
+    "Wash in cold water while agitating the beans vigorously with one's hands to release the skin, which should float away relatively easily.",
+    "Repeat agitation as many times as needed to skin all the chickpeas (usually 2-3 times).",
+    "<b>For the soaked chickpeas</b>",
+    "In an Instant Pot or a pressure cooker, soak the chickpeas until fully submerged and cook for ~12 minutes.",
+    "Drain and remove all the skin that has come off the chickpeas while cooking.",
+    "Wash in water while agitating the beans with one's hand to ensure all the skin has come off.",
+    "<b>Making the hummus</b>",
+    "Combine the tahini and lemon juice in a food processot and blend until an even cream has formed.",
+    "Add the olive oil, garlic, cumin powder and salt. Process for ~30 seconds.",
+    "Add the skinned chickpeas and process until thick and smooth.",
+    "Add water or olive as necessary to achieve desired consistency.",
+    "<b>Serving</b>",
+    "Top with roasted pine nuts, paprika and an olive oil drizzle before serving"
+  ]
+}
