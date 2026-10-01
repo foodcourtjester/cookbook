@@ -13,6 +13,8 @@ const sideDrawer = document.getElementById('sideDrawer');
 const navOverlay = document.getElementById('navOverlay');
 const closeDrawerBtn = document.getElementById('closeDrawerBtn');
 
+const themeToggle = document.getElementById('themeToggle');
+
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
@@ -305,3 +307,35 @@ function showUpdateToast() {
     });
   });
 }
+
+// Theme Toggle Setup
+
+// Check saved theme or system default on load
+function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    if (themeToggle) themeToggle.checked = true;
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    if (themeToggle) themeToggle.checked = false;
+  }
+}
+
+// Event listener for toggle switch
+if (themeToggle) {
+  themeToggle.addEventListener('change', (e) => {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+}
+
+// Call initTheme at script initialization
+initTheme();
