@@ -48,6 +48,7 @@ h1 {
   overflow-x: auto;
   /* padding-bottom: 8px;*/
   padding: 10px 0;
+  background-color: var(--header-bg);
 
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
