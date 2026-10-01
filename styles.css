@@ -346,3 +346,9 @@ h1 {
   width: 46px;
   height: 24px;
 }
+
+.theme-label {
+  color: #333333 !important; /* Force it to stay dark gray/black in both modes */
+  font-weight: bold;
+  font-size: 1rem;
+}
