@@ -1,5 +1,11 @@
 [
   {
+    "id": "sauces/basic-hummus",
+    "title": "Plain Hummus",
+    "categories": ["sauces"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/hummus.jpg"
+  },
+  {
     "id": "drinks/ginger-lemon-turmeric-tea",
     "title": "Ginger Lemon Turmeric Tea",
     "categories": ["drinks"],
