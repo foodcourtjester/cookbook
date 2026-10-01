@@ -12,7 +12,7 @@
   --bg-color: #121212;
   --card-bg: #000000;
   --text-color: #ffffff;
-  --header-bg: #ffffff;
+  --header-bg: #000000;
   --header-text: #ffffff;
   --border-color: #333333;
   --drawer-bg: #000000;
@@ -242,7 +242,7 @@ h1 {
 .hamburger-btn .bar {
   width: 24px;
   height: 3px;
-  background-color: #000000; /* Set lines to black */
+  background-color: var(--header-text);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
