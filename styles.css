@@ -48,6 +48,19 @@ main {
   box-sizing: border-box;
 }
 
+main, header {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* PC Browsers / Larger Screens */
+@media (min-width: 768px) {
+  main, header {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+
 h1 {
   font-size: 1.8rem;
   margin-bottom: 16px;
