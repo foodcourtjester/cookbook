@@ -377,3 +377,68 @@ h1 {
   font-weight: bold;
   font-size: 1rem;
 }
+
+/* Interactive Checklist Container */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.checklist-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Custom Checkbox Input */
+.checklist-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color, #ccc);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2px;
+  flex-shrink: 0;
+  display: grid;
+  place-content: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.checklist-item input[type="checkbox"]:checked {
+  background-color: #e05638;
+  border-color: #e05638;
+}
+
+/* Checkmark Symbol */
+.checklist-item input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Label text strike-through transition */
+.checklist-label {
+  line-height: 1.4;
+  color: var(--text-color, #333333);
+  transition: color 0.2s ease, text-decoration 0.2s ease, opacity 0.2s ease;
+}
+
+.checklist-item input[type="checkbox"]:checked + .checklist-label {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
