@@ -15,6 +15,8 @@ const closeDrawerBtn = document.getElementById('closeDrawerBtn');
 
 const themeToggle = document.getElementById('themeToggle');
 
+let currentActiveRecipeId = null;
+
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
   initApp();
