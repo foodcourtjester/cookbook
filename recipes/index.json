@@ -84,10 +84,10 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/sweet-potato-cake.jpg"
   },
     {
-    "id": "dessert/dark-chocolate-ganache-tart",
+    "id": "dessert/ganache-tart",
     "title": "Dark Chocolate Ganache Tart",
     "categories": ["desserts"],
-    "img": "https://foodcourtjester.github.io/cookbook/images/dark-chocolate-ganache-tart.jpg"
+    "img": "https://foodcourtjester.github.io/cookbook/images/ganache-tart.jpg"
   },
   {
     "id": "tips/cream-cheese-frosting",
