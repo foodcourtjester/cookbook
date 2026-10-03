@@ -66,6 +66,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/turkey-spinach-burger.jpg"
   },
   {
+    "id": "burgers/gyro-burger",
+    "title": "Gyro Burger",
+    "categories": ["burgers", "lamb", "beef"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/gyro-burger.jpg"
+  },
+  {
     "id": "indian/turkey-kheema",
     "title": "Turkey Kheema",
     "categories": ["indian", "turkey"],
