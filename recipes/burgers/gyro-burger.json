@@ -1,0 +1,30 @@
+{
+  "id": "gyro-burger",
+  "title": "Gyro Burger",
+  "categories": ["burgers", "lamb", "beef"],
+  "img": "images/gyro-burger.jpg",
+  "equipment": [
+    "Sheet pan",
+    "Cup measures and spoons",
+    "Mixing Bowl",
+    "Kitchen scale"
+  ],
+  "ingredients": [
+    "1 Lb. ground lamb",
+    "1 Lb. ground beef (preferably 80%-20%)",
+    "1 cup breadcrumbs",
+    "1/2 cup onions, minced",
+    "1 clove garlic, minced",
+    "1 tsp chili powder",
+    "1 tsp ground cumin",
+    "1 tsp ground coriander",
+    "1/2 tsp ground pepper",
+    "1/2 tsp salt"
+  ],
+  "instructions": [
+    "Combine all the ingredients in a large mixing bowl, ensuring the meat is well blended.",
+    "Cover and chill for 2-3 hours in the refrigerator.",
+    "Make 6 approximately 6 oz. patties.",
+    "Grill and serve with the regular fixings or even with Tzatziki sauce instead of mayo."
+  ]
+}
