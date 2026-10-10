@@ -1,1 +1,46 @@
-
+{
+  "id": "sheet-pan-doner-kebab",
+  "title": "Sheet Pan Doner Kebab",
+  "categories": ["mideast", "lamb"],
+  "img": "images/sheet-pan-doner-kebab.jpg",
+  "equipment": [
+    "Baking sheet",
+    "Food Processor",
+    "Kitchen scale",
+    "Large mixing bowl",
+    "Measuring cups and spoons"
+  ],
+  "ingredients": [
+    "2 medium onions, cut into large dice",
+    "1/4 cup olive oil",
+    "2 Lbs. ground lamb",
+    "1/2 cup plain full-fat Greek yogurt + 1/2 cup for the sauce",
+    "1.5 Tbsp smoked paprika",
+    "1.5 Tbsp dried oregano",
+    "1.5 Tbsp ground cumin",
+    "1.5 Tbsp ground cumin",
+    "1.5 Tbsp garlic powder",
+    "1 Tbsp or less crushed red pepper",
+    "1 Tbsp kosher salt",
+    "1 Tbsp black pepper",
+    "Pita bread, sliced tomato, lettuce and thinly sliced onions for serving",
+    "Lemon juice for serving"
+  ],
+  "instructions": [
+    "Preheat oven to 400 F.",
+    "In a food processor, blend onions with olive oil until a paste forms, and transfer to a large mixing bowl.",
+    "Add the lamb, yogurt, spices, salt, and pepper to the mixing bowl. Blend everything with hands until the mixture is evenly brown with no visible pockets of spices or onions.",
+    "Weigh and split the meat blend into 4 equal parts.",
+    "Place a 12x16 inch sheet of parchment paper on a clean countertop or cutting board.",
+    "Add one part of the meat mixture onto the parchment and press it out as evenly as possible to cover as much of the parchment paper as possible. It should be about 1/4 inch thick.",
+    "Working from the longest side, roll the parchment onto itself like a cinnamon roll and place onto a sheet pan.",
+    "Repeat the three previous steps to have four parchment rolls on the sheet pan.",
+    "Place the sheet pan in the oven and bake for about 20 minutes or when the fat has released onto the pan.",
+    "Pour the drippings into a small bowl, and return the sheet pan to the oven to bake for another 15 minutes.",
+    "Remove from the oven and allow the meat to cool.",
+    "Once the rolls are cool enough to handle, carefully unroll them. The lamb mixture should fall out naturally.",
+    "Tear the meat into pieces or use kitchen shears to create strips about 3 inches long.",
+    "To serve, add the remaining 1/2 cup yogurt to the drippings, and stir, seasoning with salt and pepper to taste,",
+    "Serve with pita, tomatoes, lettuce, onions, and yogurt sauce."
+  ]
+}
