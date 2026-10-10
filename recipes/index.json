@@ -78,6 +78,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/turkey-kheema.jpg"
   },
   {
+    "id": "mideast/sheet-pan-doner-kebab",
+    "title": "Sheet Pan Doner Kebab",
+    "categories": ["mideast", "lamb"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/sheet-pan-doner-kebab.jpg"
+  },
+  {
     "id": "dessert/brownies",
     "title": "From Scratch Brownies",
     "categories": ["desserts"],
