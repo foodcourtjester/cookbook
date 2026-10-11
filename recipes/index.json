@@ -2,7 +2,7 @@
   {
     "id": "sauces/basic-hummus",
     "title": "Basic Hummus",
-    "categories": ["sauces"],
+    "categories": ["sauces", "vegetarian"],
     "img": "https://foodcourtjester.github.io/cookbook/images/hummus.jpg"
   },
   {
@@ -22,6 +22,12 @@
     "title": "Cast Iron Skillet Frittata",
     "categories": ["breakfast"],
     "img": "https://foodcourtjester.github.io/cookbook/images/frittata.jpg"
+  },
+  {
+    "id": "breakfast/cheese-grits",
+    "title": "Cheese Grits",
+    "categories": ["breakfast"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/cheese-grits.jpg"
   },
   {
     "id": "bread/naan",
