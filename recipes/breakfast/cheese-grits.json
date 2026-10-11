@@ -1,0 +1,27 @@
+{
+  "id": "cheese-grits",
+  "title": "Cheese Grits",
+  "categories": ["breakfast"],
+  "img": "images/cheese-grits.jpg",
+  "equipment": [
+    "Sauce pan",
+    "Kitchen scale",
+    "Measuring cups and spoons"
+  ],
+  "ingredients": [
+    "3 Cups water",
+    "1 Cup grits",
+    "1/2 cup heavy cream",
+    "2 Tbsp unsalted butter",
+    "1 tsp kosher salt",
+    "2 oz. cream cheese",
+    "2 oz. grated sharp white cheddar cheese"
+  ],
+  "instructions": [
+    "Add the water, heavy cream, and butter to a medium sauce pan and bring to a boil.",
+    "Once boiling, turn down the heat to medium-low and stir in the grits.",
+    "Cover and cook for 15 minutes, stirring regularly.",
+    "When the grits have a thick consistency, turn the heat off and fold in the cheese.",
+    "Allow to cool and serve."
+  ]
+}
