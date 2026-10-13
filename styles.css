@@ -136,15 +136,9 @@ h1 {
 /* Photo + Name Recipe Card Grid */
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-
-@media (min-width: 768px) {
-  .recipe-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-  }
 
 .recipe-card, .modal-content, .side-drawer {
   background-color: var(--card-bg);
