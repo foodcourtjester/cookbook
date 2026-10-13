@@ -99,6 +99,16 @@ h1 {
   background: #c04025;
 }
 
+.category-row {
+  display: flex !important;
+  justify-content: center !important; /* This centers the tags horizontally */
+  gap: 8px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+
 .tag {
   background-color: var(--card-bg, #ffffff);
   color: var(--text-color, #333333);
