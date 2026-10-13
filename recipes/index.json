@@ -92,6 +92,12 @@
     "img": "https://foodcourtjester.github.io/cookbook/images/sheet-pan-doner-kebab.jpg"
   },
   {
+    "id": "sides/mac-and-cheese",
+    "title": "Mac and Cheese",
+    "categories": ["sides", "vegetarian"],
+    "img": "https://foodcourtjester.github.io/cookbook/images/mac-and-cheese.jpg"
+  },
+  {
     "id": "dessert/brownies",
     "title": "From Scratch Brownies",
     "categories": ["desserts"],
