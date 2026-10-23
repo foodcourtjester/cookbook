@@ -65,10 +65,9 @@ function setupEventListeners() {
       // Toggle active section
       document.querySelectorAll('.page-view').forEach(page => page.classList.remove('active-page'));
       
-      if (targetPage === 'home') {
-        document.getElementById('homePage').classList.add('active-page');
-      } else if (targetPage === 'about') {
-        document.getElementById('aboutPage').classList.add('active-page');
+      const targetSection = document.getElementById(targetPage + 'Page');
+      if (targetSection) {
+        targetSection.classList.add('active-page');
       }
 
       closeDrawer();
