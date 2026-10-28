@@ -1,6 +1,6 @@
 {
-  "name": "Recipe Book",
-  "short_name": "Recipes",
+  "name": "A Kap's Recipe Book",
+  "short_name": "A Kap's Recipes",
   "id": "/cookbook/",
   "start_url": "/cookbook/index.html",
   "scope": "/cookbook/",
