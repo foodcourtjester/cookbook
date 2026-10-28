@@ -1,0 +1,24 @@
+{
+  "name": "Recipe Book",
+  "short_name": "Recipes",
+  "id": "/cookbook/",
+  "start_url": "/cookbook/index.html",
+  "scope": "/cookbook/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#e05638",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
