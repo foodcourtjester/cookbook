@@ -1,5 +1,5 @@
 // Increment this version string (e.g. v1 -> v2) whenever you add new recipes
-const CACHE_NAME = 'cookbook-v1.791';
+const CACHE_NAME = 'cookbook-v1.792';
 
 const ASSETS_TO_CACHE = [
   './',
