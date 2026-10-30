@@ -201,7 +201,7 @@ h1 {
   pointer-events: auto;
 }
 
-.modal-content {
+.modalContent {
   background: var(--card-bg);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -216,7 +216,7 @@ h1 {
 }
 
 @media (min-width: 600px) {
-  .modal-content {
+  .modalContent {
     border-radius: 12px;
     max-height: 90vh;
     padding: 24px;
