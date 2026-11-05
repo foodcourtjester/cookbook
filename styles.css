@@ -265,6 +265,16 @@ h1 {
   margin-bottom: 8px;
 }
 
+.recipe-footnote {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color, #eaeaea);
+  font-size: 0.85rem;
+  color: var(--text-muted, #666);
+  font-style: italic;
+  text-align: center;
+}
+
 .wake-lock-btn {
   background-color: var(--card-bg);
   color: var(--text-color);
