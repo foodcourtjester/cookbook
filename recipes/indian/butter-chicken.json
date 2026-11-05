@@ -1,7 +1,7 @@
 {
   "id": "butter-chicken",
   "title": "Butter Chicken",
-  "footnote": "Adapted from <a href='https://www.youtube.com/watch?v=a03U45jFxOI' target='_blank' rel='noopener noreferrer'>Varun Inamdar's recipe</a>. Adjust spices to taste."
+  "footnote": "Adapted from <a href='https://www.youtube.com/watch?v=a03U45jFxOI' target='_blank' rel='noopener noreferrer'>Varun Inamdar's recipe</a>. Adjust spices to taste.",
   "categories": ["indian", "chicken"],
   "img": "images/butter-chicken.jpg",
   "equipment": [
