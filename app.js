@@ -240,6 +240,14 @@ async function loadAndOpenRecipe(recipeId) {
         `).join('');
     }
 
+    const modalFootnote = document.getElementById('modalFootnote');
+    if (recipe.footnote) {
+      modalFootnote.style.display = 'block';
+      modalFootnote.innerHTML = `<p>${recipe.footnote}</p>`;
+    } else {
+      modalFootnote.style.display = 'none'; // Hide if a recipe doesn't have one
+    }
+    
     // Restore Checkbox States from LocalStorage
     restoreChecklistState(currentActiveRecipeId);
 
