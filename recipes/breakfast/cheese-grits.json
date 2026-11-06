@@ -1,7 +1,7 @@
 {
   "id": "cheese-grits",
   "title": "Cheese Grits",
-  "footnote": "This is <a href="https://www.colonialmilling.com/" target="_blank" rel="noopener noreferrer">Colonial Milling</a>'s cheese grits recipe. Their grits are amazing!",
+  "footnote": "This is <a href='https://www.colonialmilling.com/' target='_blank' rel='noopener noreferrer'>Colonial Milling's</a> cheese grits recipe. Their grits are amazing!",
   "categories": ["breakfast"],
   "img": "images/cheese-grits.jpg",
   "equipment": [
